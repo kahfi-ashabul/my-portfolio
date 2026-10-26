@@ -199,11 +199,12 @@ window.SITE = {
   galeri: [
     { src: "assets/foto/galeri-upacara.jpg",    cap: "Apel pagi di pabrik bersama tim dan manajemen" },
     { src: "assets/foto/galeri-produksi.jpg",   cap: "Di lantai produksi" },
-    { src: "assets/foto/galeri-tim.jpg",        cap: "Bersama tim shift" },
-    { src: "assets/foto/galeri-arsip.jpg",      cap: "Sistem ordner dan denah rak yang saya susun" },
-    { src: "assets/foto/galeri-magang.jpg",     cap: "Magang di PT Purbaya Bagelen Mandiri, 2019" },
-    { src: "assets/foto/galeri-ipnu.jpg",       cap: "Kegiatan IPNU Desa Leranwetan" },
-    { src: "assets/foto/galeri-lingkungan.jpg", cap: "Kegiatan Peduli Lingkungan Dusun Karangdowo" }
+    { src: "assets/foto/galeri-tim.jpg",        cap: "Bersama tim Admin" },
+    { src: "assets/foto/galeri-arsip.jpg",      cap: "Sistem ordner yang saya susun" },
+    { src: "assets/foto/galeri-magang.jpg",     cap: "Magang dan Pelatihan APAR di PT PURBAYA" },
+    { src: "assets/foto/galeri-ipnu.jpg",       cap: "Kegiatan Buka Bersama Anak Yatim" },
+    { src: "assets/foto/galeri-lingkungan.jpg", cap: "Tim Peduli Lingkungan Dusun Karangdowo" },
+    { src: "assets/foto/galeri-kkn.jpg",        cap: "Sosialisasi" }
     // Contoh menambah foto lain (hapus tanda // di depan baris):
     // ,{ src: "assets/foto/galeri-kkn.jpg", cap: "Kegiatan KKN" }
   ],
