@@ -213,16 +213,18 @@ window.SITE = {
     {
       title: "S1 Manajemen",
       org: "Universitas Terbuka",
+      photo: "assets/foto/org-ut.jpg",
       period: "2022 – 2026",
       badge: "IPK 3,12 / 4,00",           // hapus isi ini ("") kalau tidak mau menampilkan IPK
-      note: "Kuliah jarak jauh sambil bekerja penuh waktu di industri manufaktur."
+      note: "Kuliah jarak jauh sambil bekerja penuh waktu di industri manufaktur serta ikut dalam pemberdayaan masyarakat."
     },
     {
       title: "Teknik Pengolahan Minyak, Gas &amp; Petrokimia",
       org: "SMK Negeri 1 Tuban",
+      photo: "assets/foto/org-smk.jpg",
       period: "2018 – 2021",
       badge: "Nilai Akhir 89,20 / 100",
-      note: "Praktik kerja di PT Purbaya Bagelen Mandiri: APAR, pengawasan LPG, inventory check."
+      note: "Melaksanakan pengukuran tangki minyak bumi menggunakan prosedur standar untuk memastikan akurasi data volume dan integritas operasional."
     }
   ],
 
@@ -231,7 +233,7 @@ window.SITE = {
       title: "Sekretaris",
       org: "IPNU Desa Leranwetan",
       period: "2019 – 2021",
-      note: "Administrasi dan koordinasi kegiatan organisasi pelajar tingkat desa.",
+      note: "Berkontribusi mengatur berbagai kegiatan serta ikut melaksanakan kegiatan di lapangan.",
       photo: "assets/foto/org-ipnu.jpg",
       photoAlt: "Kegiatan IPNU Desa Leranwetan"
     },
@@ -239,7 +241,7 @@ window.SITE = {
       title: "Anggota Kebersihan",
       org: "Peduli Lingkungan Dusun Karangdowo",
       period: "2019 – 2021",
-      note: "Kegiatan kebersihan dan pelestarian lingkungan dusun.",
+      note: "Aktif dalam program kebersihan dusun yang berfokus pada pengelolaan sampah setiap minggu.",
       photo: "assets/foto/org-lingkungan.jpg",
       photoAlt: "Kegiatan Peduli Lingkungan Dusun Karangdowo"
     }

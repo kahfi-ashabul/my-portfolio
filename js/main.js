@@ -123,8 +123,9 @@
     $('#edu').innerHTML = S.pendidikan.map(function (e, i) {
       return '<article class="card rv" style="--d:' + (i * 0.1) + 's"><div class="top"><div><h4>' + e.title +
         '</h4><div class="org">' + e.org + '</div></div><span class="per">' + e.period + '</span></div>' +
-        (e.badge ? '<span class="badge">' + e.badge + '</span>' : '') +
-        (e.note ? '<p class="note">' + e.note + '</p>' : '') + '</article>';
+        (e.note ? '<p class="note">' + e.note + '</p>' : '') +
+        (e.photo ? '<figure class="org-photo opt" data-photo-wrap data-file="' + e.photo + '"><img src="' + e.photo +
+          '" alt="' + (e.photoAlt || '') + '" decoding="async"></figure>' : '') + '</article>';
     }).join('');
 
     $('#org').innerHTML = S.organisasi.map(function (e, i) {
