@@ -123,6 +123,7 @@
     $('#edu').innerHTML = S.pendidikan.map(function (e, i) {
       return '<article class="card rv" style="--d:' + (i * 0.1) + 's"><div class="top"><div><h4>' + e.title +
         '</h4><div class="org">' + e.org + '</div></div><span class="per">' + e.period + '</span></div>' +
+        (e.badge ? '<span class="badge">' + e.badge + '</span>' : '') +
         (e.note ? '<p class="note">' + e.note + '</p>' : '') +
         (e.photo ? '<figure class="org-photo opt" data-photo-wrap data-file="' + e.photo + '"><img src="' + e.photo +
           '" alt="' + (e.photoAlt || '') + '" decoding="async"></figure>' : '') + '</article>';
@@ -196,8 +197,20 @@
     var show = items.length > 0 || DEBUG;
     $('#galeri').classList.toggle('hidden', !show);
     $('#nav-galeri').classList.toggle('gone', !show);
-    $$('#gal figure').forEach(function (f) { f.classList.remove('feature'); });
-    if (items.length >= 3) { items[0].classList.add('feature'); }
+    var gal = $('#gal'), n = items.length;
+    ['g1', 'g2', 'g3'].forEach(function (c) { gal.classList.remove(c); });
+    $$('#gal figure').forEach(function (f) { f.classList.remove('feature', 'w2'); });
+    if (n === 6) {
+      gal.classList.add('g3');                    // 6 foto: 3 kolom x 2 baris, rapi tanpa sisa
+    } else if (n >= 5) {
+      items[0].classList.add('feature');          // foto pertama besar, sisanya mengisi 4 kolom
+      var r = (n - 5) % 4;                        // baris terakhir tidak penuh: lebarkan agar tidak bolong
+      if (r === 1) { items[n - 1].classList.add('w2'); }
+      if (r === 2) { items[n - 1].classList.add('w2'); items[n - 2].classList.add('w2'); }
+      if (r === 3) { items[n - 3].classList.add('w2'); }
+    } else if (n >= 1) {
+      gal.classList.add('g' + Math.min(n, 3));
+    }
     items.forEach(function (f, i) { f.style.setProperty('--d', (i * 0.12) + 's'); });
     if (rvObserver) { observeReveals(document); }
   }
@@ -259,6 +272,12 @@
         }
       });
     }, { threshold: 0.12, rootMargin: '0px 0px -5% 0px' });
+
+    // animasi nomor bagian (01-07) berjalan terus selama bagiannya terlihat, berhenti saat di luar layar
+    var live = new IntersectionObserver(function (entries) {
+      entries.forEach(function (en) { en.target.classList.toggle('live', en.isIntersecting); });
+    }, { threshold: 0 });
+    $$('.sh').forEach(function (s, i) { s.style.setProperty('--k', i); live.observe(s); });
   }
 
   /* ---------------------------------------------------------------- scroll */

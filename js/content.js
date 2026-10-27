@@ -73,7 +73,7 @@ window.SITE = {
     { k: "Bahasa",     v: "Indonesia (Native), Inggris (Intermediate)" }
   ],
 
-  tools: ["Oracle E-Business Suite", "Pro-Int HRIS", "OTLINK", "Excel (Pivot Table)", "Google Sheets", "Google Workspace", "Microsoft Office"],
+  tools: ["Oracle E-Business Suite", "Pro-Int HRIS", "OTLINK", "Microsoft Excel", "Google Sheets", "Google Workspace", "Microsoft Office"],
 
   /* ---- 5. BUILD, GROW, SERVE (prinsip kerja + pencapaian) ----------------- */
   // Tambahkan angka sebelum/sesudah kalau kamu punya datanya, misalnya "dari 15 menit menjadi 2 menit".
@@ -197,14 +197,14 @@ window.SITE = {
   // Foto yang filenya belum ada otomatis tidak tampil. Kalau belum ada satu pun, bagian Galeri disembunyikan.
   // Urutan di sini = urutan tampil. Foto pertama yang ada akan tampil lebih besar.
   galeri: [
-    { src: "assets/foto/galeri-upacara.jpg",    cap: "Apel pagi di pabrik bersama tim dan manajemen" },
-    { src: "assets/foto/galeri-produksi.jpg",   cap: "Di lantai produksi" },
-    { src: "assets/foto/galeri-tim.jpg",        cap: "Bersama tim Admin" },
-    { src: "assets/foto/galeri-arsip.jpg",      cap: "Sistem ordner yang saya susun" },
-    { src: "assets/foto/galeri-magang.jpg",     cap: "Magang dan Pelatihan APAR di PT PURBAYA" },
-    { src: "assets/foto/galeri-ipnu.jpg",       cap: "Kegiatan Buka Bersama Anak Yatim" },
-    { src: "assets/foto/galeri-lingkungan.jpg", cap: "Tim Peduli Lingkungan Dusun Karangdowo" },
-    { src: "assets/foto/galeri-kkn.jpg",        cap: "Sosialisasi" }
+    { src: "assets/foto/galeri-upacara.jpg",    cap: "Apel pagi bersama tim dan manajemen pabrik" },
+    { src: "assets/foto/galeri-produksi.jpg",   cap: "Bersama operator di lantai produksi" },
+    { src: "assets/foto/galeri-tim.jpg",        cap: "Bersama tim admin PT Ultra Prima Abadi" },
+    { src: "assets/foto/galeri-arsip.jpg",      cap: "Sistem ordner bernomor yang saya susun agar dokumen mudah dicari" },
+    { src: "assets/foto/galeri-magang.jpg",     cap: "Pelatihan APAR saat magang di PT Purbaya Bagelen Mandiri" },
+    { src: "assets/foto/galeri-ipnu.jpg",       cap: "Buka bersama anak yatim, kegiatan IPNU Desa Leranwetan" },
+    { src: "assets/foto/galeri-lingkungan.jpg", cap: "Bersama tim Peduli Lingkungan Dusun Karangdowo" },
+    { src: "assets/foto/galeri-kkn.jpg",        cap: "Sosialisasi UMKM Go Digital, kegiatan KKN Universitas Terbuka" }
     // Contoh menambah foto lain (hapus tanda // di depan baris):
     // ,{ src: "assets/foto/galeri-kkn.jpg", cap: "Kegiatan KKN" }
   ],
@@ -213,18 +213,18 @@ window.SITE = {
   pendidikan: [
     {
       title: "S1 Manajemen",
-      org: "Universitas Terbuka",
+      org: "Universitas Terbuka (3,12 / 4,00)",
       photo: "assets/foto/org-ut.jpg",
       period: "2022 – 2026",
-      badge: "IPK 3,12 / 4,00",           // hapus isi ini ("") kalau tidak mau menampilkan IPK
+      badge: "",           // hapus isi ini ("") kalau tidak mau menampilkan IPK
       note: "Kuliah jarak jauh sambil bekerja penuh waktu di industri manufaktur serta ikut dalam pemberdayaan masyarakat."
     },
     {
       title: "Teknik Pengolahan Minyak, Gas &amp; Petrokimia",
-      org: "SMK Negeri 1 Tuban",
+      org: "SMK Negeri 1 Tuban (89,20 / 100)",
       photo: "assets/foto/org-smk.jpg",
       period: "2018 – 2021",
-      badge: "Nilai Akhir 89,20 / 100",
+      badge: "",
       note: "Melaksanakan pengukuran tangki minyak bumi menggunakan prosedur standar untuk memastikan akurasi data volume dan integritas operasional."
     }
   ],
